@@ -22,7 +22,6 @@ class ConcreteIterator implements IIteratorNavigation {
 
   private preOrder(node: BinaryTreeNode) {
     if (!node) return;
-    console.log(node.value);
     this.preOrder(node.leftNode);
     this.preOrder(node.rightNode);
   }
